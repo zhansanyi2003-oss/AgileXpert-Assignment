@@ -1,0 +1,75 @@
+.sidebar {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 720px;
+}
+
+.sidebar__list {
+  padding: 0 var(--space-4) var(--space-4);
+  display: grid;
+  gap: 10px;
+  align-content: start;
+  grid-auto-rows: minmax(88px, auto);
+  max-height: 520px;
+  overflow: auto;
+}
+
+.sidebar__user {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid transparent;
+  border-radius: 16px;
+  background: var(--bg-panel);
+  cursor: pointer;
+  color: var(--text-main);
+  min-height: 88px;
+  text-align: left;
+}
+
+.sidebar__user--active {
+  border-color: #8cc8bb;
+  background: #e8f5f1;
+}
+
+.dashboard--dark .sidebar__user--active {
+  border-color: #355f75;
+  background: #132334;
+}
+
+.sidebar__name {
+  font-weight: 600;
+  text-align: left;
+}
+
+.sidebar__actions {
+  padding: 0 var(--space-4) var(--space-4);
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+.sidebar__actions .el-button + .el-button {
+  margin-left: 0;
+}
+
+.sidebar__action-button {
+  min-width: 132px;
+  height: 40px;
+  padding: 0 16px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.sidebar__action-button--danger.el-button.is-plain {
+  color: red;
+  border-color: #f3b3b3;
+  background: #fff5f5;
+}
+
+.sidebar__action-button--danger.el-button.is-plain:hover,
+.sidebar__action-button--danger.el-button.is-plain:focus {
+  color: red;
+  border-color: red;
+  background: #ffe4e4;
+}

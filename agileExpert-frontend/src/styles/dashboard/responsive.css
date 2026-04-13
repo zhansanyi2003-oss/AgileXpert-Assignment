@@ -1,0 +1,108 @@
+@media (max-width: 1080px) {
+  .top-bar,
+  .panel__header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .top-bar__meta {
+    justify-content: flex-start;
+  }
+
+  .top-bar__chips {
+    justify-content: flex-start;
+  }
+
+  .dashboard__body {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    min-height: auto;
+  }
+
+  .sidebar__list {
+    max-height: 320px;
+  }
+}
+
+@media (max-width: 720px) {
+  .dashboard {
+    padding: var(--space-3);
+  }
+
+  .top-bar,
+  .panel__header {
+    padding: var(--space-4);
+  }
+
+  .top-bar__chip {
+    min-width: 0;
+    flex: 1 1 140px;
+  }
+
+  .top-bar__actions {
+    width: 100%;
+  }
+
+  .top-bar__actions .el-button {
+    flex: 1 1 0;
+  }
+
+  .sidebar__actions {
+    flex-direction: column;
+  }
+
+  .sidebar__action-button {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .device-shell {
+    margin: 0 var(--space-4) var(--space-4);
+    padding: var(--space-3);
+    border-radius: 28px;
+  }
+
+  .device-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-3);
+  }
+
+  .device-tile,
+  .device-grid {
+    grid-auto-rows: 148px;
+  }
+
+  .device-tile {
+    height: 148px;
+  }
+
+  .control-panel {
+    padding: var(--space-4);
+  }
+}
+
+@media (max-width: 480px) {
+  .top-bar__chips {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .top-bar__chip:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .device-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .device-shell__status {
+    font-size: 0.84rem;
+  }
+
+  .device-panel__actions {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}

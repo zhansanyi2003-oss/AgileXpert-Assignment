@@ -1,0 +1,68 @@
+:root {
+  --bg-page: #f2f4ef;
+  --bg-panel: #ffffff;
+  --bg-device: linear-gradient(180deg, #0f1720 0%, #1f2c3d 100%);
+  --bg-folder: #695f49;
+  --text-main: #16212f;
+  --text-soft: #6a7482;
+  --text-inverse: #f6f8fb;
+  --border-soft: #d9dfe6;
+  --shadow-soft: 0 20px 50px #dfe4ea;
+  --radius-xl: 28px;
+  --radius-lg: 18px;
+  --radius-md: 14px;
+  --space-1: 8px;
+  --space-2: 12px;
+  --space-3: 16px;
+  --space-4: 20px;
+  --space-5: 28px;
+  --space-6: 36px;
+  --font-display: "Segoe UI", "Trebuchet MS", sans-serif;
+}
+
+.dashboard--light {
+  --bg-page: #f2f4ef;
+  --bg-panel: #ffffff;
+  --bg-device: linear-gradient(180deg, #13304f 0%, #1f2c3d 100%);
+  --bg-folder: #695f49;
+  --text-main: #16212f;
+  --text-soft: #6a7482;
+  --text-inverse: #f6f8fb;
+  --border-soft: #d9dfe6;
+  --shadow-soft: 0 20px 50px #dfe4ea;
+}
+
+.dashboard--dark {
+  --bg-page: #0b1220;
+  --bg-panel: #101828;
+  --bg-device: linear-gradient(180deg, #040912 0%, #09111d 100%);
+  --bg-folder: #4f4637;
+  --text-main: #eef2f7;
+  --text-soft: #a7b2c2;
+  --text-inverse: #f8fafc;
+  --border-soft: #253146;
+  --shadow-soft: 0 20px 50px #020617;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--bg-page);
+  color: var(--text-main);
+  font-family: var(--font-display);
+}
+
+button,
+select,
+input {
+  font: inherit;
+}
+
+#app {
+  min-height: 100vh;
+}

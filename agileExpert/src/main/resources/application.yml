@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: agileExpert
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/agileexpert}
+    username: ${DB_USERNAME:user}
+    password: ${DB_PASSWORD:123456}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+
+agileexpert:
+  cli:
+    enabled: false
+  storage:
+    wallpapers-dir: uploads/wallpapers
